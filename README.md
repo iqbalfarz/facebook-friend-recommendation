@@ -12,6 +12,7 @@ It is a kaggle competition, launched by Facebook as a recruitment test.
 * [Dataset Split](#dataset-split)
 * [Feature Engineering](#feature-engineering)
 * [Machine Learning Modeling](#machine-learning-modeling)
+* [How to Run?](#how-to-run?)
 * [Team](#team)
 * [Credit](#credit)
 
@@ -113,6 +114,13 @@ $$\alpha < \frac{1}{\lambda_{max}}.$$
 - Feature Importance:
 ![image](https://user-images.githubusercontent.com/32350208/123243478-af23b000-d500-11eb-8f37-2c4f55240a47.png)
 
+## How to run?
+<pre>
+- download the dataset
+- extract the dataset
+- put the jupyter notebook and dataset in the same folder
+- and run the jupyter notebook
+</pre>
 
 ## Team
 <a href="https://github.com/iqbal786786"><img src="https://avatars.githubusercontent.com/u/32350208?v=4" width=300></a>
