@@ -18,12 +18,12 @@ It is a kaggle competition, launched by Facebook as a recruitment test.
 
 
 ## Problem Statement
-Given a directed social graph, have to prdict missing liks to recommend users(Missing Link Prediction in Graph)
+Given a directed social graph, have to predict missing links to recommend users(Missing Link Prediction in Graph)
 
 ## Data Overview
 Taken data from facebook's recruiting challenge on kaggle:[Click to download dataset](https://www.kaggle.com/c/FacebookRecruiting/data)
 
-Data contains two columns, source and destination for each edge in the graph.
+Data contains two columns, **source** and **destination** for each edge in the graph.
 <pre>
 - Data columns (total 2 columns):
 - source_node            int64
@@ -31,7 +31,7 @@ Data contains two columns, source and destination for each edge in the graph.
 </pre>
 
 ## Mapping the problem into Supervised Learning problem
-- Generated training samples of good and abd links from given directed graph and for each link got some features like no.of followers, is he followed back, page rank, katz score, adar index, some SVD features of adjacent matrix, some weight features etc. and trained ML model based on these features to predict link.
+- Generated training samples of good and bad links from given directed graph and for each link got some features like no.of followers, is he followed back, page rank, katz score, adar index, some SVD features of adjacent matrix, some weight features etc. and trained ML model based on these features to predict link.
 - **Some reference papers and video**:
     - __research paper__: [Link prediction](https://www.cs.cornell.edu/home/kleinber/link-pred.pdf)
     - __research paper__: [another publications, click to read](https://www3.nd.edu/~dial/publications/lichtenwalter2010new.pdf)
@@ -43,12 +43,13 @@ Data contains two columns, source and destination for each edge in the graph.
 - Probability of prediction is useful to recommend highest probability links
 
 ## Performance metric for supervised learning
-- Both precision and recall is important so __f1-score__ is good choice.
+- Both precision and recall are important, so __f1-score__ is a good choice.
 - Confusion Matrix
 
-__Example of sub-graph__:
+__Example of a sub-graph__:
 
 ![image](https://user-images.githubusercontent.com/32350208/123230967-61ee1100-d4f5-11eb-9b67-d0752b23c439.png)
+
 ## Exploratory Data Analysis
 
 - The number of unique persons : 1862220
@@ -120,7 +121,10 @@ $$\alpha < \frac{1}{\lambda_{max}}.$$
 - extract the dataset
 - put the jupyter notebook and dataset in the same folder
 - and run the jupyter notebook
+- if you found any library not installed on your computer. then install using pip.
 </pre>
+__How to install libraries using pip?__
+use `pip install library_name`.
 
 ## Team
 <a href="https://github.com/iqbal786786"><img src="https://avatars.githubusercontent.com/u/32350208?v=4" width=300></a>
